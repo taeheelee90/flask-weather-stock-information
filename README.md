@@ -1,4 +1,6 @@
 # flask-weather-stock-information
+Deployed at: https://weather-stock.herokuapp.com/
+
 
 # Weather iniformation 
 * https://openweathermap.org/api
@@ -6,10 +8,10 @@
 
 
 # Stock information
-* Python yfinance 
-* Stock prices for Samsung and Kakao 
+* Yahoo Finance https://finance.yahoo.com/
+* Stock prices for companies I am interested in
 
 # What is in use?
 * Flask
 * Jinja
-* yfinance
+* bs4, BeautifulSoup
