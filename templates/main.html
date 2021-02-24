@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col">
             <br>
-            <h1 style="text-algin:center">Weather & Stock</h1>
+            <h1>Weather & Stock</h1>
             <h3 class="js-Clock"></h3>
             <br>
         </div>
@@ -20,7 +20,7 @@
             <h3>Weather in Porvoo</h3>
                 <ul>
                     {% for i in porvoo %}
-                    <li>Temperature: {{i.temp}} </li>
+                    <li>Temperature: {{i.temp}} ℃</li>
                     <li>Description: {{i.desc}}</li>
                     {% endfor %} 
                 </ul>
@@ -30,11 +30,26 @@
             <h3>Weather in Seoul</h3>
             <ul>
                     {% for i in seoul %}
-                    <li>Temperature: {{i.temp}} </li>
+                    <li>Temperature: {{i.temp}} ℃</li>
                     <li>Description: {{i.desc}}</li>
                     {% endfor %} 
                 </ul>
             <br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">    
+            <h3> Samsung Stock - KRW </h3>
+                <table class="table">
+                    {{samsung | safe}}   
+                </table>  
+        </div>
+        <div class="col">    
+            <h3> Kakao Stock - KRW </h3>
+                <table class="table">
+                    {{kakao | safe}}
+                </table>     
         </div>
     </div>
 </div>
