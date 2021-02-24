@@ -56,7 +56,7 @@ function showTime(){
     const currentTime = 
     `${hour < 10 ? `0${hour}` : hour}:${minute < 10 ? `0${minute}` : minute}:${second < 10 ? `0${second}` : second}`;
 
-    clock.innerText = today + currentTime;
+    clock.innerText = today + '  ' + currentTime;
 }
 function init(){
     showTime();
