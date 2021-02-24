@@ -40,16 +40,16 @@
 
     <div class="row">
         <div class="col">    
-            <h3> Samsung Stock - KRW </h3>
-                <table class="table">
-                    {{samsung | safe}}   
-                </table>  
-        </div>
-        <div class="col">    
-            <h3> Kakao Stock - KRW </h3>
-                <table class="table">
-                    {{kakao | safe}}
-                </table>     
+            <h3> Current Stock Price  </h3>
+                <ul>
+                    {% for i in stocks %}
+                    <li>Samsung Price: {{i.samsung}} KRW</li>                    
+                    <li>Kakao Price: {{i.kakao}} KRW</li>
+                    <li>Apple Price: {{i.apple}} USD</li>
+                    <li>Tesla Price: {{i.tesla}} USD</li>
+                    <li>Neste Price: {{i.neste}} EUR</li>
+                    {% endfor %} 
+                </ul>                 
         </div>
     </div>
 </div>
